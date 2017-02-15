@@ -1,5 +1,10 @@
 $(document).ready(function() {
-  $('.switch .on').on('click', function() {
-    $('.switch .on').attr('class', 'off')
+    $('.switch button').on('click', function() {
+      if ($('.switch button').hasClass('on')) {
+        $('.switch .on').attr('class', 'off')
+      }
+      else {
+        $('.switch .off').attr('class', 'on')
+      }
   });
 });
